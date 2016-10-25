@@ -31,4 +31,4 @@ sudo apt-get install -y curl
 curl -sSL https://cmake.org/files/v3.6/cmake-3.6.2-Linux-x86_64.tar.gz | sudo tar -xzC /opt
 echo "Linking to cmake executables from /usr/local/bin"
 sudo ln -s -t /usr/local/bin/ /opt/cmake-3.6.2-Linux-x86_64/bin/* 
-echo "Completed successfully. Please update your path to include /opt/cmake-3.6.2-Linux-x86_64/bin"
+echo "Completed successfully."
