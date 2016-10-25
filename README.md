@@ -37,7 +37,7 @@ These are just scripts which automate the instructions from the Swift website. T
 
 ## Also, docker
 
-If you want to install a more current version of Docker, there's also a script for that. You could even do the entire build within a docker container, if you could even run the constituent scripts within a docker container, and commit the work midway, if you wanted the ability to rollback the filesystem.
+If you want to install a more current version of Docker, there's also a script for that. You could even do the entire build within a docker container. Or you could run the constituent scripts within a docker container and commit the image after each step, if you wanted the ability to rollback the filesystem.
 
 
 
