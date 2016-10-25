@@ -12,14 +12,14 @@ How to do it:
 
 1. Go to your cloud provider of choice and create an instance as follows:
 
-- Ubuntu 14.04 LTS
-- at least 64 GB of disk on the main filesystem
-- optimized for compute 
-
-  If you are using AWS, a `c4.8xlarge` is a good choice. If you go
-  with something much lighter, like a `m3.medium`, it will literally
-  take well over 10 hours to run a full build and test cycle. The
-  tests alone take over 10 minutes on a c4.
+    - Ubuntu 14.04 LTS
+    - at least 64 GB of disk on the main filesystem
+    - optimized for compute 
+    
+      If you are using AWS, a `c4.8xlarge` is a good choice. If you go
+      with something much lighter, like a `m3.medium`, it will literally
+      take well over 10 hours to run a full build and test cycle. The
+      tests alone take over 10 minutes on a c4.
 
 2. upload this repo to the instance.
 
