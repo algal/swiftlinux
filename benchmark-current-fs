@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# benchmarks speed of i/o in the current directory
+# by writing 100,000 4kB blocks
+
+export BLOCK_SIZE=4
+export FILE_PATH="$PWD/benchfile"
+export LOOPS=100000
+time sh -c "dd if=/dev/zero of=${FILE_PATH} bs=${BLOCK_SIZE}k count=${LOOPS} && sync"
+rm "$FILE_PATH"
