@@ -16,7 +16,10 @@ How to do it:
 - at least 64 GB of disk on the main filesystem
 - optimized for compute 
 
-If you are using AWS, a `c4.8xlarge` is a good choice. If you go with something much lighter, like a `m3.medium`, it will literally take well over 10 hours to run a full build and test cycle. The tests alone take over 10 minutes on a c4.
+  If you are using AWS, a `c4.8xlarge` is a good choice. If you go
+  with something much lighter, like a `m3.medium`, it will literally
+  take well over 10 hours to run a full build and test cycle. The
+  tests alone take over 10 minutes on a c4.
 
 2. upload this repo to the instance.
 
@@ -30,7 +33,7 @@ If you don't want to have to maintain the network connection while these scripts
 
 ## What this does.
 
-These are just scripts which automate the instructions from the Swift website. The scripts themselves are pretty self-explanatory. The main tricky part is uploading and configuring a few development dependencies that cannot be installed automatically through apt-get. These are version 3.6 of clang, and a more current version of cmake.
+These are just scripts which automate the instructions from the Swift website. The scripts themselves are pretty self-explanatory. The main tricky part is downloading and install a few development dependencies that cannot be installed automatically through apt-get. These are version 3.6 of clang, and a more current version of cmake.
 
 ## Also, docker
 
