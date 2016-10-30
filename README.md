@@ -33,9 +33,9 @@ If you don't want to have to maintain the network connection while these scripts
 
 ## What this does.
 
-These are just scripts which automate the instructions from the Swift website. The scripts themselves are pretty self-explanatory. The main tricky part is downloading and install a few development dependencies that cannot be installed automatically through apt-get. These are version 3.6 of clang, and a more current version of cmake.
+These are just scripts which automate the instructions from the Swift website. The scripts themselves are pretty self-explanatory. The main tricky part is downloading and installing a few development dependencies that cannot be installed automatically through apt-get. These are version 3.6 of clang, and a more current version of cmake.
 
-Not that, by default, this script builds a _debug_ configuration of the Swift compiler and runs tests. That is the effect of the command `utils/build-script -t` in the `go-03-build.sh` script. If instead you simply want to build Swift in its _release_ configuration, then instead you should do `utils/build-script -r`.
+Note that, by default, this script builds a _debug_ configuration of the Swift compiler and runs tests. That is the effect of the command `utils/build-script -t` in the `go-03-build.sh` script. If instead you simply want to build Swift in its _release_ configuration, then instead you should do `utils/build-script -r`.
 
 ## Compatibility
 
