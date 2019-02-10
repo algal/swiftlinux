@@ -12,7 +12,7 @@ How to do it:
 
 1. Go to your cloud provider of choice and create an instance as follows:
 
-    - Ubuntu 14.04 LTS (e.g., the AWS `ami-d732f0b7`)
+    - Ubuntu 16.04 LTS (e.g., the AWS `ami-0f26d4c9992650142`)
     - at least 64 GB of disk on the main filesystem
     - optimized for compute 
     
@@ -33,13 +33,9 @@ If you don't want to have to maintain the network connection while these scripts
 
 ## What this does.
 
-These are just scripts which automate the instructions from the Swift website. The scripts themselves are pretty self-explanatory. The main tricky part is downloading and installing a few development dependencies that cannot be installed automatically through apt-get. These are version 3.6 of clang, and a more current version of cmake.
-
-Note that, by default, this script builds a _debug_ configuration of the Swift compiler and runs tests. That is the effect of the command `utils/build-script -t` in the `go-03-build.sh` script. If instead you simply want to build Swift in its _release_ configuration, then instead you should do `utils/build-script -r`.
+These are just scripts which automate the instructions from the Swift website. 
 
 ## Compatibility
-
-This script is known good for Ubuntu 14.04 LTS, as supplied by AMI `ami-d732f0b7`, and with the state of the apt-get repos and the Swift source repos as they exist on 2016-10-30, 10:31am SF time.
 
 ## Also, docker
 
