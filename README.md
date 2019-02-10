@@ -1,12 +1,12 @@
 # Let's Build Swift
 
+Note: this is not working yet as of 2019-02-10T1203
+
 ## Short, simple, automated steps for building Swift
 
-So you'd like to build Swift on Linux? Perhaps to hack on the compiler or on the corelibs re-implementation of Foundation?
+So you'd like to build Swift on Linux? Perhaps to hack on the compiler or on the corelibs re-implementation of Foundation? But it seems like it's complicated to setup and you just want to get it working right now?
 
-But it seems like it's complicated to setup and you just want to get it working right now?
-
-You've come to the right place.
+These scripts try to help.
 
 How to do it:
 
@@ -20,6 +20,10 @@ How to do it:
       with something much lighter, like a `m3.medium`, it will literally
       take well over 10 hours to run a full build and test cycle. The
       tests alone take over 10 minutes on a c4.
+      
+    - There's a script `create_instance.bash` which will do this using
+      AWS command line tools, but you will need to update the name of
+      your AWS ssh key and the names of your security groups.
 
 2. upload this repo to the instance.
 
