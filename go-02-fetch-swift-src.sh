@@ -10,4 +10,4 @@ cd swift-source
 git clone https://github.com/apple/swift.git
 ./swift/utils/update-checkout --clone "$@"
 
-echo "Completed succesfully"
+echo "Fetching swift sources: Completed succesfully"
