@@ -34,7 +34,7 @@ How to do it:
 But what if you want to build something besides 4.2?
 
 
-The arguments to `go-all.sh` are simply appended to a call to `swift/utils/update-checkout --clone`. It controls which commit of swift, and other repos, are checked out. That script's help output can provide more guidance on different arguments it accepts.
+The arguments to `go-all.sh` are simply appended to a call to `swift/utils/update-checkout --clone`. It controls which commit of swift, and other repos, is checked out. That script's help output can provide more guidance on different arguments it accepts.
 
 If you provide no arguments, the default behavior is to build the HEAD of master. This may or may not work. You can also specify build "schemes", using a format like `--scheme <schemename>`. I am no expert. The only thing I have seen build completely successfully is that tag.
 
