@@ -1,6 +1,6 @@
 # Let's Build Swift
 
-Note: this is not working yet as of 2019-02-10T1203
+Note: this is not working yet on Ubuntu 16 as of 2019-02-10T1203
 
 ## Short, simple, automated steps for building Swift
 

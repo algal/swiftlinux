@@ -25,7 +25,7 @@ instance_type=c4.8xlarge
 run_instances_output=$(
     aws ec2 run-instances \
         --instance-type $instance_type \
-        --block-device-mapping "[ { \"DeviceName\": \"/dev/sda1\", \"Ebs\": { \"VolumeSize\": 64 } } ]" \
+        --block-device-mapping "[ { \"DeviceName\": \"/dev/sda1\", \"Ebs\": { \"VolumeSize\": 128 } } ]" \
         --image-id $aws_ami_id \
         --key-name $key_name \
         --security-groups $security_groups
@@ -52,5 +52,5 @@ echo "  ssh -i ~/.ssh/bespoke_identity -L localhost:8888:localhost:8888 -l ubunt
 echo ""
 echo "To upload go scripts:"
 echo ""
-echo "  scp -i ~/.ssh/bespoke_identity go* -l ubuntu@$instance_public_dns_name:~/"
+echo "  scp -i ~/.ssh/bespoke_identity go* ubuntu@$instance_public_dns_name:~/"
 echo ""

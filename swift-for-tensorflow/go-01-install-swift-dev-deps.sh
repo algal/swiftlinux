@@ -13,3 +13,15 @@ sudo apt-get -yy install git cmake ninja-build clang python uuid-dev libicu-dev 
 
 echo "Completed successfully."
 
+should_use_tensorflow=false
+# ...do something interesting...
+if [ "$should_use_tensorflow" = true ] ; then
+    # TensorFlow only
+    # Bazel TensorFlow requirements: https://docs.bazel.build/versions/master/install-ubuntu.html#install-with-installer-ubuntu
+    sudo apt-get -yy install openjdk-8-jdk
+    echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
+    curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
+fi
+
+
+
